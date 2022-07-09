@@ -1,0 +1,235 @@
+button:hover {
+    transform: scale(1.03) perspective(1px)
+}
+
+button {
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.popup {
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(121, 121, 121, 0.454);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.popup-inner {
+    
+    border-radius: 20px;
+    position: relative;
+    padding: 32px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+    
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+
+    
+    
+}
+
+.popup-inner .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color:#838383;
+    background: none;
+    transition: all .1s ease-in-out;
+}
+
+.close-btn:hover {
+    color: black;
+    transform: scale(.7) perspective(1px)
+}
+
+.popup-header {
+   
+    font-weight: 800;
+    display: flex;
+    width: 100%;
+}
+
+.popup-input {
+    margin-top: 20px;
+    width: 100px;
+    padding: 15px;
+    border-radius: 2px;
+    border: 1px solid #666666;
+
+}
+
+.popup-button {
+  border: none;
+  border-radius: 40px;
+  background-color: rgb(0, 0, 0);
+  font-weight: 700;
+  color: white;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 40px;
+  flex-grow:1;
+}
+
+
+
+.album-cover {
+    width: 300px;
+    height: 300px;
+    
+   
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 14px;
+    flex-shrink: 0;
+
+
+    
+}
+
+
+.new-post-contents-flex {
+    display: flex;
+    
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.new-post-contents-search-and-desc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    
+}
+
+.search-track-input {
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    font-weight: 700;
+    padding: 10px;
+    width: 400px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgb(234, 234, 234)
+}
+
+.search-track-items {
+    position: absolute;
+    margin-top: 36px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.search-track-item {
+    padding-top: 5px;
+    padding-left: 10px;
+    font-weight: 800;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(234, 234, 234);
+    background-color: rgb(234, 234, 234);
+    margin-bottom: -4px;
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    position: relative;
+    width:409px;
+    transition: background-color 3s ease-in-out;
+    transition: background 3s ease-in-out;
+    transition: color 0.1s linear;
+    
+}
+
+.search-track-item:hover {
+    color: white;
+    background-color: black;
+    background: black;
+}
+
+.max-width {
+    width: 100%;
+}
+
+.login-signup {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-input-login {
+  
+    padding: 20px;
+    width: 300px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    font-weight: 600;
+    font-size: 15px;
+    background: rgb(234, 234, 234);
+}
+
+.enter-desc {
+    font-weight: 700;
+    outline: none;
+    border: none;
+    height: 250px;
+    background: rgb(234, 234, 234)
+}
+
+.song-info {
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.song-title {
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.song-artist {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.song-title-artist-flex {
+    display: flex;
+    flex-direction: column;
+    margin-right:auto;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction:row;
+    align-content: flex-end;
+    align-items:flex-end;
+    justify-content: left;
+    
+}
+
+.submit-post {
+    margin-top: 26px;
+    background-color: blue;
+    font-weight: 700;
+    border-radius: 25px;
+    color: white;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    outline: none;
+    
+}
