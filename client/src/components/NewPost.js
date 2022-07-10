@@ -1,8 +1,20 @@
 import React from 'react'
 import SearchSong from './SearchSong'
+import { Link } from 'react-router-dom'
 
 function NewPost(props) {
   return (
+    <>
+
+<div className="background-default">
+              <div className="popup">
+                  <div className="popup-inner">
+                      <Link to="/">
+                        <button className="close-btn">x</button>
+                      </Link>
+
+
+
     <div className="max-width">
         <h1 className="popup-header">New Post</h1>
         <div className="new-post-contents-flex">
@@ -24,6 +36,10 @@ function NewPost(props) {
         </div>
         
     </div>
+    </div>
+    </div>
+    </div>
+    </>
   )
 }
 

@@ -40,6 +40,7 @@
   height: 100vh;
   width: 100vw; 
   display: flex;
+  border: 5px black;
 }
 
 .left-menu {
@@ -47,8 +48,8 @@
   width: 230px;
   display: flex;
   flex-direction: column;
-  border-right: 4mm ridge rgb(255, 81, 81);
-  border-right: 2mm ridge rgb(126, 182, 255);
+  border-right: 1px ridge rgb(0, 0, 0);
+  
 }
 
 
@@ -110,7 +111,8 @@
   padding-bottom: 13px;
   display: flex;
   align-items:center;
-  justify-content: center;;
+  justify-content: center;
+
 }
 
 .login-button {

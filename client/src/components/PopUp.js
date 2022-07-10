@@ -5,6 +5,7 @@ import SearchSong from './SearchSong'
 import LogIn from './LogIn'
 import SignUp from './SignUp'
 import NewPost from './NewPost'
+import { Route, Routes} from 'react-router-dom'
 
 function PopUp(props) {
 
@@ -17,25 +18,20 @@ function PopUp(props) {
     }); //Passed down to song selection
 
     return (
-    <div className="background-default">
-        <div className="popup">
-            <div className="popup-inner">
-                <button onClick={() => props.stateChanger("")} className="close-btn">x</button>
-                {
-                    {
-                        "new-post":
-                            <NewPost accesstoken={props.accesstoken} song={song} setsong={setSong}></NewPost>,
-                        "log-in":
-                            <LogIn></LogIn>,
-                        "sign-up": 
-                            <SignUp></SignUp>,
-                    }[props.currState]
-                }
-                
+    <>
+        <div className="background-default">
+            <div className="popup">
+                <div className="popup-inner">
+                    <button onClick={() => props.stateChanger("")} className="close-btn">x</button>
+                    <Routes>
+                        <Route exact path="/new-post" element={<NewPost accesstoken={props.accesstoken} song={song} setsong={setSong}/>}></Route>
+                        <Route exact path="/log-in" element={<LogIn></LogIn>}></Route>
+                        <Route exact path="/sign-up" element={<SignUp></SignUp>}></Route>
+                    </Routes>
+                </div>
             </div>
-
         </div>
-    </div>
+    </>
     )
 }
 
