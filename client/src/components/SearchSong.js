@@ -14,7 +14,6 @@ function SearchSong(props) {
             previewurl: e.currentTarget.getAttribute('previewurl'),
             imageurl: e.currentTarget.getAttribute('imageurl'),
             artistname: e.currentTarget.getAttribute('artistname'),
-            songid: e.currentTarget.getAttribute('songid'),
         })
         setTracks([])
         setSearchTrack(e.currentTarget.getAttribute('songname'))
@@ -32,9 +31,13 @@ function SearchSong(props) {
 
             }
         }
+        try {
         var trackName = await fetch('https://api.spotify.com/v1/search?q=' + searchTrack + '&type=track&limit=5', trackParameters)
             .then(response => response.json())
             .then(data => {console.log(data.tracks.items); setTracks(data.tracks.items)})
+        } catch {
+            console.log("Searching elements...")
+        }
     }
 
   return (

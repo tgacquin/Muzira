@@ -14,10 +14,15 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(121, 121, 121, 0.454);
+    background-color: rgba(0, 0, 0, 0.575);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    animation: fadeInAnimation ease-out .3s;
+   
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     
 }
 
@@ -145,9 +150,9 @@ button {
     display: inline-block;
     position: relative;
     width:409px;
-    transition: background-color 3s ease-in-out;
-    transition: background 3s ease-in-out;
-    transition: color 0.1s linear;
+    animation: fadeInAnimation ease .4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     
 }
 
@@ -180,10 +185,12 @@ button {
 }
 
 .enter-desc {
+    text-align: left;
     font-weight: 700;
     outline: none;
     border: none;
     height: 250px;
+    padding: 20px;
     background: rgb(234, 234, 234)
 }
 
@@ -233,3 +240,100 @@ button {
     outline: none;
     
 }
+
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+  }
+
+  .view-post-flex-container {
+    display:flex;
+  }
+
+  .view-post-left-containter {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    border-right: 1px solid gray;
+  }
+
+  .view-post-right-container {
+    
+  }
+
+  .view-post-album-cover {
+        height: 300px;
+        width: 300px;
+        margin-top: 15px;
+        background-color: gray;
+        border-radius: 10px;
+  }
+
+  .view-post-header {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .view-post-subheader {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .view-post-description-container {
+    text-justify: auto;
+    word-wrap:normal;
+    max-width: 210px;
+   
+  }
+
+  .view-post-description {
+    text-justify: auto;
+  }
+
+
+  .comment-box-header {
+    font-weight: 800;
+    font-size: 20px;
+  }
+  .comment-box {
+    margin-left: 40px;
+    padding-right: 20px;
+  }
+
+  .edit-profile-flex {
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .edit-profile-header {
+    font-weight: 800;
+    font-size: 30px;
+  }
+  
+  .edit-info-input {
+    border-radius: 40px;
+    width: 300px;
+    margin-top: 20px;
+    border: none;
+    background: rgb(222, 222, 222);
+    outline: none;
+    height:20px;
+    padding: 10px;
+  }
+  .edit-info-submit {
+    border-radius: 40px;
+    width: 300px;
+    margin-top: 20px;
+    border: none;
+    background: rgb(222, 222, 222);
+    outline: none;
+    height:20px;
+    padding: 10px;
+  }

@@ -1,14 +1,35 @@
 import React from 'react'
 import { useState } from 'react'
-import { BrowserRouter, Link } from 'react-router-dom'
+import { BrowserRouter, Link, useNavigate } from 'react-router-dom'
 
 function LogIn() {
+
+  const navigate = useNavigate()
 
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
 
   async function loginUser(event) {
-    return 
+    event.preventDefault()
+
+    const response = await fetch('http://localhost:3001/api/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+          username,
+          password,
+      })
+    })
+    console.log(response)
+    const data = await response.json()
+    if (data.user) {
+        localStorage.setItem('token', data.user)
+        navigate(`/home/your-profile`)
+    } else {
+      alert("Please check your username and password")
+    }
   }
 
 

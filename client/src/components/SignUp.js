@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate } from 'react-router-dom'
 
 
 function SignUp() {
@@ -9,6 +9,7 @@ function SignUp() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [verifyPassword, setVerifyPassword] = useState("")
+  const navigate = useNavigate();
 
   async function registerUser(event) {
     event.preventDefault()
@@ -20,13 +21,16 @@ function SignUp() {
       body: JSON.stringify({
         username,
         email,
-        password
+        password,
+        alias: "",
+        description: "No description",
       })
     })
 
     const data = await response.json()
-
-    console.log(data)
+    if (data.status=== 'ok') {
+        navigate('/log-in')
+    }
   }
 
 
