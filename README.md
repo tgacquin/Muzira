@@ -6,7 +6,7 @@ Features:
  - Song sharing using Spotify's client credential authorization
  - Fully featured media player to play posted songs
 
-
+![Screenshot (1)](https://user-images.githubusercontent.com/97247900/186486644-e59e938c-53bf-4835-a290-627641b469ae.png)
 ![Screenshot (2)](https://user-images.githubusercontent.com/97247900/186484157-89a2cbd2-8ffd-4668-b456-b5d71725f31f.png)
 ![Screenshot (3)](https://user-images.githubusercontent.com/97247900/186484260-2ddc8378-4b53-45a1-9d31-e83a64ace4e5.png)
 ![Screenshot (4)](https://user-images.githubusercontent.com/97247900/186484280-57dbebae-8f46-4adf-b2af-b37d4a17c2c5.png)
