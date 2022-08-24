@@ -8,8 +8,6 @@ Features:
 
 ![Screenshot (1)](https://user-images.githubusercontent.com/97247900/186486644-e59e938c-53bf-4835-a290-627641b469ae.png)
 ![Screenshot (4)](https://user-images.githubusercontent.com/97247900/186484280-57dbebae-8f46-4adf-b2af-b37d4a17c2c5.png)
-![Screenshot (5)](https://user-images.githubusercontent.com/97247900/186484341-eb47dce1-3993-4bbf-a230-718e8aaacbc6.png)
-![Screenshot (6)](https://user-images.githubusercontent.com/97247900/186484357-1ce12aec-f8bd-4595-a4e2-bd0468cca019.png)
 ![Screenshot (7)](https://user-images.githubusercontent.com/97247900/186484371-9ff08264-91a6-404f-a25b-8e05e7038e3c.png)
 ![Screenshot (8)](https://user-images.githubusercontent.com/97247900/186484383-efeb4a00-6f43-4a8b-b004-d81cdc693ad6.png)
 ![Screenshot (9)](https://user-images.githubusercontent.com/97247900/186484406-bfab4aa3-4fb7-4d96-8135-60cdfd5e6a86.png)
